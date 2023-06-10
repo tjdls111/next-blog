@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import styles from './style.module.scss'
 
 const Header = () => {
 const pathname=usePathname();
@@ -10,9 +11,10 @@ return (
       <h1>
         <Link href="/">Snrnsidy</Link>
       </h1>
-      <nav className="flex gap-3">
-        <Link href="/about" className={pathname.includes('about')?'bg-gray-400':''}>About</Link>
-        <Link href="/post" className={pathname.includes('post')?'bg-gray-400':''}>Post</Link>
+      <nav className={`flex gap-3 ${styles.nav}`}>
+        <Link href="/" className={pathname==='/'?'bg-pink':''}>Home</Link>
+        <Link href="/about" className={pathname.includes('about')?'bg-pink':''}>About</Link>
+        <Link href="/post" className={pathname.includes('post')?'bg-pink':''}>Posts</Link>
       </nav>
     </header>
 );
