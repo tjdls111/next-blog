@@ -1,2 +1,3 @@
-# next-blog
-- next
+# next-blog 🤗😉
+- Next.js
+- introduce
