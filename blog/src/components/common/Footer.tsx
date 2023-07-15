@@ -3,26 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <ul className="flex flex-col gap-1 text-xs absolute bottom-0 left-0 z-10 text-bold pl-3 pb-2">
-        <li>
-          <a
-            className="hover:underline  hover:text-blue"
-            href="https://snrnsidy.tistory.com/"
-            target="_blank"
-          >
-            Tistory
-          </a>
-        </li>
-        <li>
-          <a
-            className="hover:underline hover:text-blue"
-            href="https://www.acmicpc.net/user/snrnsidy"
-            target="_blank"
-          >
-            Baekjoon
-          </a>
-        </li>
-      </ul>
+     
       <div className="absolute bottom-0 left-0 right-0">
         <svg width="100%" height="120px" fill="none">
           <path fill="#F2D7D9">

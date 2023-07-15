@@ -11,7 +11,7 @@ export const List = () => {
   const modifiedData = data.flat()
   return (
     <>
-      <h3 className="text-bold text-lg pl-3">Posts</h3>
+      <h3 className="font-bold text-lg pl-3">Posts</h3>
       <section className="x-auto">
         <CardList list={modifiedData} />
         <button

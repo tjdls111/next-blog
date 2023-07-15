@@ -26,7 +26,7 @@ export const Card = ({
         />
         <div className="flex flex-col items-center">
           <p className="text-xs self-end pt-2">{time_ago}</p>
-          <p className="text-bold text-sm w-full truncate">{title}</p>
+          <p className="font-bold text-sm w-full truncate">{title}</p>
           <span className="text-xs rounded-md my-2 p-1 bg-slate-300">
             {domain}
           </span>
