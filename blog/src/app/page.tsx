@@ -1,7 +1,11 @@
+import Profile from '@/components/home/Profile'
+import { BestPostList } from '@/components/post/BestPostListFetcher'
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-  
-    </main>
+    <>
+      <Profile />
+      <BestPostList />
+    </>
   )
 }

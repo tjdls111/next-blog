@@ -11,6 +11,9 @@ const nextConfig = {
 
     return config
   },
+  images: {
+    domains: ['placekitten.com'],
+  },
 }
 
 module.exports = nextConfig
