@@ -13,7 +13,7 @@ export const BestPostList = () => {
     <>
       <h3 className="text-bold text-lg pl-3">Best Posts</h3>
       <section className="x-auto">
-        <CardList list={data} />
+        <CardList list={...data[0].slice(0, 5)} />
       </section>
     </>
   )
