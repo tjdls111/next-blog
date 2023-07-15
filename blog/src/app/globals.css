@@ -20,6 +20,10 @@
   }
 } */
 
+html, body{
+  height:100vh;
+  overflow-y:auto;
+}
 body {
   color: rgb(var(--foreground-rgb));
 

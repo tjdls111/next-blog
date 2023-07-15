@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="h-[150px] relative translate-y-[-100%] ">
+    <footer>
       <ul className="flex flex-col gap-1 text-xs absolute bottom-0 left-0 z-10 text-bold pl-3 pb-2">
         <li>
           <a
@@ -24,7 +24,7 @@ const Footer = () => {
         </li>
       </ul>
       <div className="absolute bottom-0 left-0 right-0">
-        <svg width="100%" height="150px" fill="none">
+        <svg width="100%" height="120px" fill="none">
           <path fill="#F2D7D9">
             <animate
               repeatCount="indefinite"
