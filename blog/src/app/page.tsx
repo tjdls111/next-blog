@@ -1,11 +1,11 @@
 import Profile from '@/components/home/Profile'
-import { List } from '@/components/post/PostListFetcher'
+import { BestPostList } from '@/components/post/BestPostListFetcher'
 
 export default function Home() {
   return (
     <>
       <Profile />
-      <List />
+      <BestPostList />
     </>
   )
 }
