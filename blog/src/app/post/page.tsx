@@ -1,8 +1,7 @@
-import React from 'react';
+import { useNewList } from '@/adapters/useCase/useNewList'
+import { List } from '@/components/post/PostListFetcher'
 
 const PostList = () => {
-return (
-    <div>PostList</div>
-);
+  return <List />
 }
-export default PostList;
+export default PostList
