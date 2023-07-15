@@ -1,7 +1,7 @@
-import Header from '@/components/Header'
+import Header from '@/components/common/Header'
 import './globals.css'
 import { Work_Sans } from 'next/font/google'
-import Footer from '@/components/Footer'
+import Footer from '@/components/common/Footer'
 
 const sans = Work_Sans({ subsets: ['latin'] })
 

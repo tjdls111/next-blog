@@ -8,7 +8,11 @@ const Header = () => {
   const pathname = usePathname()
   return (
     <header className="sticky bg-white top-0 flex justify-between mx-3 py-3 border-b-2 border-b-gray-500">
-      <Link href="/">Snrnsidy</Link>
+      <Link href="/">
+        <h1>
+          Snrnsidy
+        </h1>
+        </Link>
       <nav className={`flex gap-3 ${styles.nav}`}>
         <Link href="/" className={pathname === '/' ? 'bg-pink' : ''}>
           🏠
