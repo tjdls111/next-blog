@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en" className={(sans.className, 'h-full')}>
       <body className="h-full max-w-5xl mx-auto">
         <Header />
-        <main className="h-auto min-h-[calc(100%-50px)] pb-10">{children}</main>
+        <main className="h-auto min-h-[calc(100%-50px)] pb-[150px]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="h-10 relative translate-y-[-100%] ">
+    <footer className="h-[150px] relative translate-y-[-100%] ">
       <ul className="flex flex-col gap-1 text-xs absolute bottom-0 left-0 z-10 text-bold pl-3 pb-2">
         <li>
           <a
