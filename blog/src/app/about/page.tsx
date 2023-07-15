@@ -1,17 +1,12 @@
-import React from 'react';
-import Mail from './Mail';
+import React from 'react'
 
 const About = () => {
-return (
+  return (
     <main className="text-center my-2">
-        <p>Problem Solving lover</p>
-        <p>Free soul</p>
-        <p>Voice Recognition Artificial Intelligence Developer</p>
-        
-        <div className='text-center'>
-            <Mail/>
-        </div>
+      <p>Problem Solving lover</p>
+      <p>Free soul</p>
+      <p>Voice Recognition Artificial Intelligence Developer</p>
     </main>
-);
+  )
 }
-export default About;
+export default About

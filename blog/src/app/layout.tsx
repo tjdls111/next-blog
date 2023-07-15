@@ -16,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={sans.className}>
-      <body>
+    <html lang="en" className={(sans.className, 'h-full')}>
+      <body className="h-full max-w-5xl mx-auto">
         <Header />
-        {children}
+        <main className="h-auto min-h-[calc(100%-50px)] pb-10">{children}</main>
         <Footer />
       </body>
     </html>

@@ -1,8 +1,6 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
-return (
-    <footer>Footer</footer>
-);
+  return <footer className="h-10 relative translate-y-[-100%]">df</footer>
 }
-export default Footer;
+export default Footer
