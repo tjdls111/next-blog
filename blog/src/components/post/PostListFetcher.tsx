@@ -14,7 +14,7 @@ export const List = () => {
         {data.map((items, index) => {
           return items.map((item) => (
             <li
-              className="p-3 bg-slate-100 rounded-md hover:bg-slate-300"
+              className="p-3 bg-slate-100 rounded-md hover:bg-slate-300 hover:underline"
               key={item.id}
             >
               <Link href={item.url} target="_blank">
