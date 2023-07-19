@@ -1,9 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Card } from './Card';
-import { NewsList } from '@/type/newsList';
 
-export const MultiCarousel = ({ list }: { list: NewsList[] }) => {
+export const MultiCarousel = ({ children }: { children: React.Node }) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -24,10 +22,8 @@ export const MultiCarousel = ({ list }: { list: NewsList[] }) => {
   };
 
   return (
-    <Carousel autoPlay rewind responsive={responsive}>
-      {list.map((item) => (
-        <Card key={item.id} item={item} />
-      ))}
+    <Carousel autoPlay infinite responsive={responsive}>
+     {children}
     </Carousel>
   );
 };
