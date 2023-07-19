@@ -1,7 +1,7 @@
 'use client'
 
 import { useNewList } from '@/adapters/useCase/useNewList'
-import { CardList } from './CardList'
+import { MultiCarousel } from './MultiCarousel'
 
 export const BestPostList = () => {
   //TODO : Best post 만 가져오기
@@ -13,7 +13,7 @@ export const BestPostList = () => {
     <>
       <h3 className="font-bold text-lg pl-3">Best Posts</h3>
       <section className="x-auto">
-        <CardList list={...data[0].slice(0, 5)} />
+        <MultiCarousel list={...data[0].slice(0, 12)}/>
       </section>
     </>
   )
