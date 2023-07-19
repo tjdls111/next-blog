@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-export const MultiCarousel = ({ children }: { children: React.Node }) => {
+export const MultiCarousel = ({ children }: { children: React.ReactNode }) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
