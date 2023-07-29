@@ -1,12 +1,14 @@
-import { NewsList } from '@/type/newsList'
+import { NewsItem } from '@/type/newsList'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export const Card = ({
-  item: { id, time_ago, title, domain },
+  item: { id, date, title, categoryId },
 }: {
-  item: NewsList
+  item: NewsItem
 }) => {
+  //TODO:category id -> name
+  //TODO: image
   return (
     <li
       className="p-3 border-1 bg-slate-100 rounded-md w-[200px] h-[200px] overflow-hidden shadow-lg hover:shadow-2xl hover:bg-slate-200"
@@ -25,10 +27,10 @@ export const Card = ({
           alt="thumbnail"
         />
         <div className="flex flex-col items-center">
-          <p className="text-xs self-end pt-2">{time_ago}</p>
+          <p className="text-xs self-end pt-2">{date}</p>
           <p className="font-bold text-sm w-full truncate">{title}</p>
           <span className="text-xs rounded-md my-2 p-1 bg-slate-300">
-            {domain}
+            {categoryId}
           </span>
         </div>
       </Link>

@@ -15,8 +15,7 @@ export const BestPostList = () => {
       <h3 className="font-bold text-lg pl-3">Best Posts</h3>
       <section className="x-auto">
         <MultiCarousel>
-          {...data[0]
-            .slice(0, 12)
+          {data
             .map((item) => <Card key={item.id} item={item} />)}
         </MultiCarousel>
       </section>

@@ -9,6 +9,8 @@ export const List = () => {
   if (isLoading) return <div>loading...</div>
   if (error || !data) return <div>failed to load</div>
   const modifiedData = data.flat()
+
+  
   return (
     <>
       <h3 className="font-bold text-lg pl-3">Posts</h3>
