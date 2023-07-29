@@ -33,7 +33,7 @@ export const List = () => {
       (<section>
         <ul>
           {categoryList.data.map((category)=>(
-            <li key={category.id} onClick={()=>setActiveCategoryId(category.id)}>{category.name}</li>
+            <li key={category.id} onClick={()=>setActiveCategoryId(Number(category.id))}>{category.name}</li>
           ))}
           </ul>
         </section>)}
