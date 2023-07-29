@@ -1,4 +1,4 @@
-interface CategoryItem {
+export interface CategoryItem {
   id: string;
   name: string;
   parent: string;
