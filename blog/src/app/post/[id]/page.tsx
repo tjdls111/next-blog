@@ -1,10 +1,11 @@
 'use client'
 
 import { usePost } from '@/adapters/useCase/usePost';
+interface Props {params:{id:number}}
 
-const PostDetail = ({params:{id}}:{params:{id:number}}) => {
+const PostDetail = ({params:{id}}:Props) => {
   const {data,isLoading,error}= usePost(id)
-  if (isLoading||error) return 'loading..'
+  if (isLoading||error||!data) return 'loading..'
   return (<div>
     <h2>{data.title}</h2>
     <p>created at : {data.date}</p>
