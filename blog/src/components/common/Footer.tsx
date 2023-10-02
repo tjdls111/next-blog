@@ -1,9 +1,7 @@
-import React from 'react'
 
 const Footer = () => {
   return (
     <footer>
-     
       <div className="absolute bottom-0 left-0 right-0">
         <svg width="100%" height="120px" fill="none">
           <path fill="#F2D7D9">
