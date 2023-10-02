@@ -1,12 +1,11 @@
 'use client'
 
 import { usePost } from '@/adapters/useCase/usePost';
-import React from 'react';
 
-const PostDetail = () => {
-  const {data,isLoading,error}= usePost()
+const PostDetail = ({params:{id}}:{params:{id:number}}) => {
+  const {data,isLoading,error}= usePost(id)
   if (isLoading||error) return 'loading..'
-  return <div>
+  return (<div>
     <h2>{data.title}</h2>
     <p>created at : {data.date}</p>
     <pre>
@@ -17,6 +16,6 @@ const PostDetail = () => {
       {data.url}+{}
       </a>
       </p>
-  </div>;
+  </div>);
 };
 export default PostDetail;
