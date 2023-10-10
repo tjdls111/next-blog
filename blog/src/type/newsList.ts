@@ -1,5 +1,5 @@
 export interface NewsItem {
-  categoryId: number;
+  categoryId: string;
   comments: number;
   date: string;
   id: number;

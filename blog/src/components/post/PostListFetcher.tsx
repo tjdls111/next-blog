@@ -8,7 +8,7 @@ import Category from './Category';
 export const List = () => {
   const { data, error, isLoading, size, setSize } = useNewList();
   const categoryList = useCategory();
-  const [activeCategoryId, setActiveCategoryId] = useState<number>(-1);
+  const [activeCategoryId, setActiveCategoryId] = useState<number>(0);
 
   if (isLoading) return <div>loading...</div>;
   if (error || !data) return <div>failed to load</div>;
@@ -21,7 +21,7 @@ export const List = () => {
         <section className="x-auto">
           <CardList
             list={modifiedData.filter(
-              (data) => data.categoryId === activeCategoryId
+              (data) => Number(data.categoryId) === activeCategoryId
             )}
           />
           <button
