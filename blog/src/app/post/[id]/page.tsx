@@ -9,9 +9,8 @@ const PostDetail = ({params:{id}}:Props) => {
   return (<div>
     <h2>{data.title}</h2>
     <p>created at : {data.date}</p>
-    <pre>
-      {data.content}
-    </pre>
+    <div className="prose lg:prose-xl" dangerouslySetInnerHTML={{__html:data.content}}>
+    </div>
     <p>original : 
       <a href={`${data.url}/id`}>
       {data.url}+{}
