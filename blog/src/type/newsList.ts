@@ -1,12 +1,17 @@
+export interface NewsItem {
+  categoryId: string;
+  comments: number;
+  date: string;
+  id: number;
+  postUrl: string;
+  title: string;
+  trackbacks: number;
+  visibility: number;
+}
 export interface NewsList {
-  comments_count: number
-  domain: string
-  id: number
-  points: number
-  time: number
-  time_ago: string
-  title: string
-  type: string
-  url: string
-  user: string
+  tistory: {
+    item: {
+      posts: NewsItem[];
+    };
+  };
 }

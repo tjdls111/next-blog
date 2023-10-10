@@ -1,0 +1,23 @@
+export interface PostResponse {
+  "tistory":{
+    "status":string;
+    "item":{
+      "url":string;
+      "secondaryUrl":string;
+      "id":string;
+      "title":string;
+      "content":string;
+      "categoryId":string;
+      "postUrl":string;
+      "visibility":string;
+      "acceptComment":string;
+      "acceptTrackback":string;
+      "tags":{
+        "tag":string[];
+      }
+      "comments":string;
+      "trackbacks":string;
+      "date":string;
+    }
+  }
+}
